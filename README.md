@@ -53,8 +53,10 @@ LaunchX 2023 program and is published here as a portfolio project; it is not on 
 
 ## Requirements
 
-- iOS 14.0+ (deployment target set in the Xcode project)
-- Xcode 14.3.1 or newer
+- iOS 14.0+ (`IPHONEOS_DEPLOYMENT_TARGET` in the Xcode project)
+- Xcode 14.3.1, the version the project was built with. Recent Xcode releases reject a 14.0
+  deployment target ("the range of supported deployment target versions is 15.0 to …"), so
+  raise `IPHONEOS_DEPLOYMENT_TARGET` to 15.0 before building with a newer Xcode.
 - A Firebase project with Auth, Cloud Firestore and Realtime Database enabled
 - CocoaPods
 
