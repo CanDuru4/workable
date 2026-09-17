@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B08776DC69CFAEEE50BFF7 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3E21A195CD9092733124AA37 /* FirebasePerformance */; };
 		1F2119E32A6FD008000FEB49 /* The Workable Logo - 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2119E22A6FD008000FEB49 /* The Workable Logo - 4.png */; };
 		1F2119E52A70032A000FEB49 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2119E42A70032A000FEB49 /* InfoTableViewCell.swift */; };
 		1F6C07762A57FF7A00B4EAFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C07752A57FF7A00B4EAFE /* AppDelegate.swift */; };
@@ -25,9 +26,15 @@
 		1FEC98B72A601BBA00C5C83B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEC98B62A601BBA00C5C83B /* TabBarViewController.swift */; };
 		1FEF6A032A6544850066CEC3 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF6A022A6544850066CEC3 /* CredentialsViewController.swift */; };
 		1FEF6A052A654F710066CEC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF6A042A654F710066CEC3 /* GoogleService-Info.plist */; };
-		298CA964B8B671ADFA45EC9E /* Pods_ESG_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A710F70B9E2902B36144D72C /* Pods_ESG_Connect.framework */; };
-		AB957D60074B163FA348FB1A /* Pods_ESG_Connect_ESG_ConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9220239D9A1E9535406DEAD0 /* Pods_ESG_Connect_ESG_ConnectUITests.framework */; };
-		F7C09D762A358D6E1243CD25 /* Pods_ESG_ConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D892AF5A43307C112E44742 /* Pods_ESG_ConnectTests.framework */; };
+		275C3BF69A74BE09340E09EC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 67DED911F0D0EF632DB0E381 /* FirebaseDatabase */; };
+		27FCCDED84176647F9786CC3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 261EA21B5976D6D25346FDC8 /* FirebaseAuth */; };
+		3115B32DD68570960115D574 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 9426A5F3221384F79646C8C9 /* FirebaseInAppMessaging-Beta */; };
+		3EF6E86EB486DEEBE54455DA /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 496CEEC0540B6F60AAF12B1B /* FirebaseAppCheck */; };
+		405F13400D201D52010A89F7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 39636B12D9EABAA73E2A0019 /* FirebaseAnalytics */; };
+		E415BECA4406CDED1C2D898F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F97AB32C94775C1DCA140AEF /* FirebaseFirestore */; };
+		F92D829628DE529F84696F3D /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 77CDDF18DA7246095BB545A3 /* FirebaseCore */; };
+		FE61DA9DEF34BDE86204BBD3 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA7D220CE61C1A1E682D33B /* FirebaseCrashlytics */; };
+		FFE504E60623BDDF906079A3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3753DB8F63CA58EC56F22355 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02AA3FFD4D7E11E644A63518 /* Pods-ESG Connect-ESG ConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESG Connect-ESG ConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-ESG Connect-ESG ConnectUITests/Pods-ESG Connect-ESG ConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0F9A1FC9F8D0A71F093421F3 /* Pods-ESG ConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESG ConnectTests.release.xcconfig"; path = "Target Support Files/Pods-ESG ConnectTests/Pods-ESG ConnectTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F097B1E2A5C9C15005FBA32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1F097B1F2A5C9C22005FBA32 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		1F2119E22A6FD008000FEB49 /* The Workable Logo - 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Workable Logo - 4.png"; sourceTree = "<group>"; };
@@ -75,13 +80,6 @@
 		1FEC98B62A601BBA00C5C83B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		1FEF6A022A6544850066CEC3 /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		1FEF6A042A654F710066CEC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4D892AF5A43307C112E44742 /* Pods_ESG_ConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESG_ConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		696D68F000FB086E4EBFB17E /* Pods-ESG Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESG Connect.debug.xcconfig"; path = "Target Support Files/Pods-ESG Connect/Pods-ESG Connect.debug.xcconfig"; sourceTree = "<group>"; };
-		9220239D9A1E9535406DEAD0 /* Pods_ESG_Connect_ESG_ConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESG_Connect_ESG_ConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A710F70B9E2902B36144D72C /* Pods_ESG_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESG_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B59D1F12AE89124ABBCB53A0 /* Pods-ESG Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESG Connect.release.xcconfig"; path = "Target Support Files/Pods-ESG Connect/Pods-ESG Connect.release.xcconfig"; sourceTree = "<group>"; };
-		FAD09B4522E3D7BAC17CF95E /* Pods-ESG Connect-ESG ConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESG Connect-ESG ConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-ESG Connect-ESG ConnectUITests/Pods-ESG Connect-ESG ConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FB64741BE05CC0A764260DA5 /* Pods-ESG ConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESG ConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-ESG ConnectTests/Pods-ESG ConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298CA964B8B671ADFA45EC9E /* Pods_ESG_Connect.framework in Frameworks */,
+				F92D829628DE529F84696F3D /* FirebaseCore in Frameworks */,
+				405F13400D201D52010A89F7 /* FirebaseAnalytics in Frameworks */,
+				27FCCDED84176647F9786CC3 /* FirebaseAuth in Frameworks */,
+				E415BECA4406CDED1C2D898F /* FirebaseFirestore in Frameworks */,
+				275C3BF69A74BE09340E09EC /* FirebaseDatabase in Frameworks */,
+				FFE504E60623BDDF906079A3 /* FirebaseMessaging in Frameworks */,
+				FE61DA9DEF34BDE86204BBD3 /* FirebaseCrashlytics in Frameworks */,
+				09B08776DC69CFAEEE50BFF7 /* FirebasePerformance in Frameworks */,
+				3EF6E86EB486DEEBE54455DA /* FirebaseAppCheck in Frameworks */,
+				3115B32DD68570960115D574 /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7C09D762A358D6E1243CD25 /* Pods_ESG_ConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB957D60074B163FA348FB1A /* Pods_ESG_Connect_ESG_ConnectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +133,6 @@
 				1F097B1E2A5C9C15005FBA32 /* README.md */,
 				1F6C07742A57FF7A00B4EAFE /* ESGConnect */,
 				1F6C07732A57FF7A00B4EAFE /* Products */,
-				E2C210AD4FCEE95AAC5DE259 /* Pods */,
 				D77CD2E0BB0305C18434B5F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -228,24 +232,8 @@
 		D77CD2E0BB0305C18434B5F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A710F70B9E2902B36144D72C /* Pods_ESG_Connect.framework */,
-				9220239D9A1E9535406DEAD0 /* Pods_ESG_Connect_ESG_ConnectUITests.framework */,
-				4D892AF5A43307C112E44742 /* Pods_ESG_ConnectTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E2C210AD4FCEE95AAC5DE259 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				696D68F000FB086E4EBFB17E /* Pods-ESG Connect.debug.xcconfig */,
-				B59D1F12AE89124ABBCB53A0 /* Pods-ESG Connect.release.xcconfig */,
-				02AA3FFD4D7E11E644A63518 /* Pods-ESG Connect-ESG ConnectUITests.debug.xcconfig */,
-				FAD09B4522E3D7BAC17CF95E /* Pods-ESG Connect-ESG ConnectUITests.release.xcconfig */,
-				FB64741BE05CC0A764260DA5 /* Pods-ESG ConnectTests.debug.xcconfig */,
-				0F9A1FC9F8D0A71F093421F3 /* Pods-ESG ConnectTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,18 +243,28 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F6C079C2A57FF7C00B4EAFE /* Build configuration list for PBXNativeTarget "ESG Connect" */;
 			buildPhases = (
-				20C7F4FAC21942D2877E0608 /* [CP] Check Pods Manifest.lock */,
 				1F6C076E2A57FF7A00B4EAFE /* Sources */,
 				1F6C076F2A57FF7A00B4EAFE /* Frameworks */,
 				1F6C07702A57FF7A00B4EAFE /* Resources */,
 				1FC9ABED2A70588E0066733E /* ShellScript */,
-				7E1A39094444EF104972D944 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "ESG Connect";
+			packageProductDependencies = (
+				77CDDF18DA7246095BB545A3 /* FirebaseCore */,
+				39636B12D9EABAA73E2A0019 /* FirebaseAnalytics */,
+				261EA21B5976D6D25346FDC8 /* FirebaseAuth */,
+				F97AB32C94775C1DCA140AEF /* FirebaseFirestore */,
+				67DED911F0D0EF632DB0E381 /* FirebaseDatabase */,
+				3753DB8F63CA58EC56F22355 /* FirebaseMessaging */,
+				6AA7D220CE61C1A1E682D33B /* FirebaseCrashlytics */,
+				3E21A195CD9092733124AA37 /* FirebasePerformance */,
+				496CEEC0540B6F60AAF12B1B /* FirebaseAppCheck */,
+				9426A5F3221384F79646C8C9 /* FirebaseInAppMessaging-Beta */,
+			);
 			productName = "ESG Connect";
 			productReference = 1F6C07722A57FF7A00B4EAFE /* ESG Connect.app */;
 			productType = "com.apple.product-type.application";
@@ -275,7 +273,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F6C079F2A57FF7C00B4EAFE /* Build configuration list for PBXNativeTarget "ESG ConnectTests" */;
 			buildPhases = (
-				F2230AB5E984A0B3598F933A /* [CP] Check Pods Manifest.lock */,
 				1F6C07842A57FF7C00B4EAFE /* Sources */,
 				1F6C07852A57FF7C00B4EAFE /* Frameworks */,
 				1F6C07862A57FF7C00B4EAFE /* Resources */,
@@ -294,11 +291,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F6C07A22A57FF7C00B4EAFE /* Build configuration list for PBXNativeTarget "ESG ConnectUITests" */;
 			buildPhases = (
-				52304B886A484A05F1A81248 /* [CP] Check Pods Manifest.lock */,
 				1F6C078E2A57FF7C00B4EAFE /* Sources */,
 				1F6C078F2A57FF7C00B4EAFE /* Frameworks */,
 				1F6C07902A57FF7C00B4EAFE /* Resources */,
-				79F04BFA3A58DFC8149DED65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +337,9 @@
 				Base,
 			);
 			mainGroup = 1F6C07692A57FF7A00B4EAFE;
+			packageReferences = (
+				E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1F6C07732A57FF7A00B4EAFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -399,107 +397,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
-		};
-		20C7F4FAC21942D2877E0608 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ESG Connect-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		52304B886A484A05F1A81248 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ESG Connect-ESG ConnectUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		79F04BFA3A58DFC8149DED65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ESG Connect-ESG ConnectUITests/Pods-ESG Connect-ESG ConnectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ESG Connect-ESG ConnectUITests/Pods-ESG Connect-ESG ConnectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ESG Connect-ESG ConnectUITests/Pods-ESG Connect-ESG ConnectUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7E1A39094444EF104972D944 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ESG Connect/Pods-ESG Connect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ESG Connect/Pods-ESG Connect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ESG Connect/Pods-ESG Connect-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2230AB5E984A0B3598F933A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ESG ConnectTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ] && [ \"${PLATFORM_NAME}\" = \"iphoneos\" ] && [ \"${ACTION}\" = \"install\" ] && [ \"${CODE_SIGNING_ALLOWED}\" != \"NO\" ]; then\n  firebase_packages=\"${FIREBASE_SOURCE_PACKAGES_DIR:-${BUILD_DIR%/Build/*}/SourcePackages}\"\n  firebase_script=\"${firebase_packages}/checkouts/firebase-ios-sdk/Crashlytics/run\"\n  if [ ! -f \"${firebase_script}\" ]; then\n    printf '%s\\n' 'error: Firebase Crashlytics run script not found. Resolve packages or set FIREBASE_SOURCE_PACKAGES_DIR to the directory passed to -clonedSourcePackagesDirPath.' >&2\n    exit 1\n  fi\n  /bin/sh \"${firebase_script}\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -682,7 +580,6 @@
 		};
 		1F6C079D2A57FF7C00B4EAFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 696D68F000FB086E4EBFB17E /* Pods-ESG Connect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -700,12 +597,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.ESG-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -719,7 +620,6 @@
 		};
 		1F6C079E2A57FF7C00B4EAFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B59D1F12AE89124ABBCB53A0 /* Pods-ESG Connect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -737,12 +637,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.ESG-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -756,7 +660,6 @@
 		};
 		1F6C07A02A57FF7C00B4EAFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB64741BE05CC0A764260DA5 /* Pods-ESG ConnectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -764,7 +667,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NV57XZ3KBV;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.ESG-ConnectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -777,7 +680,6 @@
 		};
 		1F6C07A12A57FF7C00B4EAFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F9A1FC9F8D0A71F093421F3 /* Pods-ESG ConnectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -785,7 +687,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NV57XZ3KBV;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.ESG-ConnectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -798,13 +700,13 @@
 		};
 		1F6C07A32A57FF7C00B4EAFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02AA3FFD4D7E11E644A63518 /* Pods-ESG Connect-ESG ConnectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NV57XZ3KBV;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.ESG-ConnectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -817,13 +719,13 @@
 		};
 		1F6C07A42A57FF7C00B4EAFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAD09B4522E3D7BAC17CF95E /* Pods-ESG Connect-ESG ConnectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NV57XZ3KBV;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.ESG-ConnectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -874,6 +776,70 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 12.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		261EA21B5976D6D25346FDC8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3753DB8F63CA58EC56F22355 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		39636B12D9EABAA73E2A0019 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3E21A195CD9092733124AA37 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		496CEEC0540B6F60AAF12B1B /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		67DED911F0D0EF632DB0E381 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6AA7D220CE61C1A1E682D33B /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		77CDDF18DA7246095BB545A3 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		9426A5F3221384F79646C8C9 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		F97AB32C94775C1DCA140AEF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E098D73238E8A41CB99B917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F6C076A2A57FF7A00B4EAFE /* Project object */;
 }

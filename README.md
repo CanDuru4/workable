@@ -49,43 +49,27 @@ LaunchX 2023 program and is published here as a portfolio project; it is not on 
 - **Swift 5.0**, UIKit, programmatic Auto Layout (no main storyboard; only `LaunchScreen.storyboard`)
 - **Firebase** — Auth, Cloud Firestore (`users` collection), Realtime Database (web links), Cloud Messaging, App Check (App Attest), Analytics, Crashlytics, Performance, In-App Messaging
 - **WebKit** (`WKWebView`) for the FAQ, privacy policy and payment pages
-- **CocoaPods** for dependency management
+- **Swift Package Manager** for dependency management (Firebase 12.19.1)
 
 ## Requirements
 
-- iOS 14.0+ (`IPHONEOS_DEPLOYMENT_TARGET` in the Xcode project)
-- Xcode 14.3.1, the version the project was built with. Recent Xcode releases reject a 14.0
-  deployment target ("the range of supported deployment target versions is 15.0 to …"), so
-  raise `IPHONEOS_DEPLOYMENT_TARGET` to 15.0 before building with a newer Xcode.
+- iOS 15.0+ (test targets require iOS 17 or later)
+- Xcode 27
 - A Firebase project with Auth, Cloud Firestore and Realtime Database enabled
-- CocoaPods
 
 ## Installation
 
 1. Clone the repository and open the project directory.
 
-2. **CocoaPods.** The `Podfile` is not checked in. Create one next to `ESG Connect.xcodeproj`
-   with the pods below and run `pod install`, then open the generated `.xcworkspace`:
-
-```ruby
-  use_frameworks!
-
-  pod 'FirebaseAnalytics'
-  pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
-  pod 'FirebaseDatabase'
-  pod 'Firebase/Messaging'
-  pod 'Firebase/Crashlytics'
-  pod 'FirebasePerformance'
-  pod 'FirebaseAppCheck'
-  pod 'FirebaseInAppMessaging', "> 10.7-beta"
-```
+2. **Dependencies.** Open `ESG Connect.xcodeproj` in Xcode 27 or later. Swift Package Manager
+   resolves the pinned Firebase packages automatically; CocoaPods is no longer required.
 
 3. **Firebase configuration.** Download `GoogleService-Info.plist` from your Firebase
    project and drop it into `ESGConnect/`. The Xcode project already expects that file as a
-   bundle resource, and `.gitignore` keeps it out of version control — never commit it.
+   bundle resource, and `.gitignore` keeps it out of version control; never commit it. Without
+   it the app shows a setup screen instead of calling Firebase.
 
-4. Build and run the `ESG Connect` scheme on an iOS 14.0+ simulator or device. App Attest
+4. Build and run the shared `ESG Connect` scheme on an iOS 15.0+ simulator or device. App Attest
    needs a real device; on the simulator, register a debug App Check token in the Firebase console.
 
 ### Configuration the app reads at runtime
@@ -102,6 +86,14 @@ The app has no `.env` file. Everything outside the source lives in Firebase:
 
 The Realtime Database URL is currently hard-coded in the view controllers that read it, so
 point those at your own instance if you fork the project.
+
+### Crashlytics symbol upload
+
+For signed Release archives using a custom package checkout directory, set the
+`FIREBASE_SOURCE_PACKAGES_DIR` build setting to the same absolute directory passed to
+`-clonedSourcePackagesDirPath`. Without an override, the Crashlytics phase uses Xcode's standard
+DerivedData package directory. Missing scripts fail with a setup instruction. Unsigned builds and
+simulator builds do not upload symbols.
 
 ## Project Structure
 
@@ -152,7 +144,7 @@ Can Duru – [canduru.net](https://canduru.net) – canduru2004@gmail.com, suppo
 
 [swift-image]: https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
-[platform-image]: https://img.shields.io/badge/platform-iOS%2014.0%2B-lightgrey.svg
+[platform-image]: https://img.shields.io/badge/platform-iOS%2015.0%2B-lightgrey.svg
 [platform-url]: https://developer.apple.com/ios/
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: LICENSE

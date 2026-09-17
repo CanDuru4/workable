@@ -107,6 +107,24 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode
 
+
+# Preserve the application dependency lockfile without tracking Xcode user state.
+!ESG Connect.xcodeproj/project.xcworkspace/
+ESG Connect.xcodeproj/project.xcworkspace/*
+!ESG Connect.xcodeproj/project.xcworkspace/xcshareddata/
+ESG Connect.xcodeproj/project.xcworkspace/xcshareddata/*
+!ESG Connect.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+ESG Connect.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/*
+!ESG Connect.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+# Local secrets and machine state (never commit)
+**/GoogleService-Info.plist
+xcuserdata/
+.DS_Store
+DerivedData/
+.build/
+*.xcresult
+
 ### Secrets and local configuration ###
 # Firebase project configuration: pull it from the Firebase console, never commit it.
 GoogleService-Info.plist
