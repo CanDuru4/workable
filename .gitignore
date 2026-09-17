@@ -105,7 +105,6 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-**/ESGConnect/GoogleService-Info.plist
 # End of https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode
 
 
@@ -125,3 +124,38 @@ xcuserdata/
 DerivedData/
 .build/
 *.xcresult
+
+### Secrets and local configuration ###
+# Firebase project configuration: pull it from the Firebase console, never commit it.
+GoogleService-Info.plist
+**/GoogleService-Info.plist
+Keys.plist
+**/Keys.plist
+Secrets.plist
+**/Secrets.plist
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.cer
+*.certSigningRequest
+*.mobileprovision
+
+### Machine and editor files ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+.idea/
+*.swp
+
+### Tooling caches and build output ###
+node_modules/
+__pycache__/
+.venv/
+dist/
+
+
