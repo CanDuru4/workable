@@ -1,5 +1,4 @@
 [![Swift Version][swift-image]][swift-url]
-[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
 # Workable
 <br />
@@ -26,26 +25,13 @@ This application is currently in the development stage.
 ## Requirements
 
 - iOS 15.0+
-- Xcode 14.3.1
+- Xcode 27
 
 ## Installation
 
-#### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `Firebase, Analytics, Messaging, Crashlytics, Performance, App Check, In-app Messaging` by adding it to your `Podfile`:
+Open the `.xcodeproj` directly in Xcode 27 or later. Swift Package Manager resolves the pinned dependencies automatically; CocoaPods is no longer required. Firebase 12.19.1 requires iOS 15 or later (SponsorApp retains iOS 16). Test targets require iOS 17 or later.
 
-```ruby
-  use_frameworks!
-
-  pod 'FirebaseAnalytics'
-  pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
-  pod 'FirebaseDatabase'
-  pod 'Firebase/Messaging'
-  pod 'Firebase/Crashlytics'
-  pod 'FirebasePerformance'
-  pod 'FirebaseAppCheck'
-  pod 'FirebaseInAppMessaging', "> 10.7-beta"
-```
+Supply the app's existing `GoogleService-Info.plist` through the app target before using Firebase services. Missing configuration shows a setup screen without accessing Firebase.
 
 ## Photos from the Application
 
@@ -66,10 +52,12 @@ You can use [CocoaPods](http://cocoapods.org/) to install `Firebase, Analytics, 
 
 ## Meta
 
-Can Duru – canduru2004@gmail.com, support@canduru.net
+Can Duru , canduru2004@gmail.com, support@canduru.net
 
 
 [https://github.com/CanDuru4](https://github.com/CanDuru4)
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
+
+For signed Release archives using a custom package checkout directory, set the `FIREBASE_SOURCE_PACKAGES_DIR` build setting to the same absolute directory passed to `-clonedSourcePackagesDirPath`. Without an override, the Crashlytics phase uses Xcode's standard DerivedData package directory. Missing scripts fail with a setup instruction. Unsigned builds and simulator builds do not upload symbols.
