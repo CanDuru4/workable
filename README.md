@@ -8,7 +8,7 @@
 
 Workable is a UIKit iOS app that works as a two-sided directory for ESG-related hiring. A person signs up as an employee or as a company, fills in a short profile, and browses the other side of the market from a searchable, auto-refreshing list. It is aimed at early-stage companies hiring for ESG roles and at candidates looking for them. The app was last worked on in 2023, is still at the development stage, and is not on the App Store.
 
-> **Context:** Built for the FutureGorge startup during the LaunchX Entrepreneurship Summer Program (2023).
+> **Context:** LaunchX summer entrepreneurship program project, 2023. The app was built for FutureGorge, the venture developed in the program.
 
 <p align="center">
   <img src="docs/assets/workable-logo.png" alt="Workable logo" width="180">
@@ -49,7 +49,7 @@ The Xcode project, target and bundle identifier still carry the product's earlie
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/CanDuru4/Workable.git
+   git clone https://github.com/CanDuru4/workable.git
    ```
 
 2. Open `ESG Connect.xcodeproj` in Xcode. Swift Package Manager resolves the pinned Firebase packages automatically.
