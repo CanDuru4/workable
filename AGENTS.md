@@ -20,7 +20,7 @@ The product is "Workable" (`CFBundleDisplayName`), but the project, target, sche
 - `ESGConnect/Subscription/` — Stripe pre-payment page in a `WKWebView`.
 - `ESGConnect/Helper/AppCheck.swift` — App Attest provider factory.
 - `ESG Connect.entitlements` — push notifications (`aps-environment` = development).
-- `README.md` — features, setup, Configuration table. `CHANGELOG.md` — 0.0.0 and 1.0.0 notes (2023). `docs/assets/` — README images only.
+- `README.md`: features, setup, Configuration table. `CHANGELOG.md`: 0.0.0 and 1.0.0 notes (2023). `design-assets/`: logo, banner and README screenshots only.
 
 ## Commands
 
