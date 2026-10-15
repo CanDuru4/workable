@@ -21,7 +21,6 @@ The product is "Workable" (`CFBundleDisplayName`), but the project, target, sche
 - `ESGConnect/Helper/AppCheck.swift` — App Attest provider factory.
 - `ESG Connect.entitlements` — push notifications (`aps-environment` = development).
 - `README.md` — features, setup, Configuration table. `CHANGELOG.md` — 0.0.0 and 1.0.0 notes (2023). `docs/assets/` — README images only.
-- The root `ESG Connect.xcworkspace/` is a stray local folder, not tracked; ignore it.
 
 ## Commands
 
