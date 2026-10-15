@@ -11,7 +11,7 @@ Workable is a UIKit iOS app that works as a two-sided directory for ESG-related 
 > **Context:** LaunchX summer entrepreneurship program project, 2023. The app was built for FutureGorge, the venture developed in the program.
 
 <p align="center">
-  <img src="docs/assets/workable-logo.png" alt="Workable logo" width="180">
+  <img src="design-assets/logo/workable-logo.png" alt="Workable logo" width="180">
 </p>
 
 The Xcode project, target and bundle identifier still carry the product's earlier name, ESG Connect (`ESG Connect.xcodeproj`, source in `ESGConnect/`, bundle id `com.CanDuru.ESG-Connect`).
@@ -88,22 +88,22 @@ ESGConnect/
 ├── Helper/AppCheck.swift       App Attest provider factory
 ├── Assets.xcassets/            Colors, app icon and logos
 └── Info.plist
-docs/assets/                    README images
+design-assets/                  Logo, banner and README screenshots
 CHANGELOG.md                    Version history
 ```
 
 ## Screenshots
 
 <p align="center">
-  <img src="docs/assets/screenshot-1.png" alt="Workable screenshot 1" width="260">
-  <img src="docs/assets/screenshot-2.png" alt="Workable screenshot 2" width="260">
-  <img src="docs/assets/screenshot-3.png" alt="Workable screenshot 3" width="260">
+  <img src="design-assets/screenshots/screenshot-1.png" alt="Workable screenshot 1" width="260">
+  <img src="design-assets/screenshots/screenshot-2.png" alt="Workable screenshot 2" width="260">
+  <img src="design-assets/screenshots/screenshot-3.png" alt="Workable screenshot 3" width="260">
 </p>
 
 <p align="center">
-  <img src="docs/assets/screenshot-4.png" alt="Workable screenshot 4" width="260">
-  <img src="docs/assets/screenshot-5.png" alt="Workable screenshot 5" width="260">
-  <img src="docs/assets/screenshot-6.png" alt="Workable screenshot 6" width="260">
+  <img src="design-assets/screenshots/screenshot-4.png" alt="Workable screenshot 4" width="260">
+  <img src="design-assets/screenshots/screenshot-5.png" alt="Workable screenshot 5" width="260">
+  <img src="design-assets/screenshots/screenshot-6.png" alt="Workable screenshot 6" width="260">
 </p>
 
 ## License
