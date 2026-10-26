@@ -1,5 +1,7 @@
 @AGENTS.md
 
+Validation scope, shared capacity and remote execution follow AGENTS.md. Command examples below do not require a full-suite rerun for every edit.
+
 ## Claude Code
 
 - Verify Swift edits with the unsigned simulator `xcodebuild` build from AGENTS.md before reporting done.
