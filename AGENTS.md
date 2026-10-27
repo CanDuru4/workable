@@ -10,16 +10,16 @@ The product is "Workable" (`CFBundleDisplayName`), but the project, target, sche
 
 ## Repo map
 
-- `ESG Connect.xcodeproj/` — the project to open. Shared scheme in `xcshareddata/xcschemes/ESG Connect.xcscheme`; pinned packages in `project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.
-- `ESGConnect/AppDelegate.swift` — App Check, Firebase configure, FCM push registration.
-- `ESGConnect/SceneDelegate.swift` — root VC: `CredentialsViewController` in a nav controller, or a "Firebase setup required" screen when Firebase is not configured.
-- `ESGConnect/TabBarViewController.swift` — Home / Subscription / Profile tabs.
-- `ESGConnect/Credentials/` — welcome, `LogIn/`, `SignUp/` screens.
-- `ESGConnect/Home/` — searchable list of the other side of the market, refreshed by a 60 s `Timer`.
-- `ESGConnect/Profile/` — profile, personal info editing (name, email, password), FAQ web view.
-- `ESGConnect/Subscription/` — Stripe pre-payment page in a `WKWebView`.
-- `ESGConnect/Helper/AppCheck.swift` — App Attest provider factory.
-- `ESG Connect.entitlements` — push notifications (`aps-environment` = development).
+- `ESG Connect.xcodeproj/`: the project to open. Shared scheme in `xcshareddata/xcschemes/ESG Connect.xcscheme`; pinned packages in `project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.
+- `ESGConnect/AppDelegate.swift`: App Check, Firebase configure, FCM push registration.
+- `ESGConnect/SceneDelegate.swift`: root VC: `CredentialsViewController` in a nav controller, or a "Firebase setup required" screen when Firebase is not configured.
+- `ESGConnect/TabBarViewController.swift`: Home / Subscription / Profile tabs.
+- `ESGConnect/Credentials/`: welcome, `LogIn/`, `SignUp/` screens.
+- `ESGConnect/Home/`: searchable list of the other side of the market, refreshed by a 60 s `Timer`.
+- `ESGConnect/Profile/`: profile, personal info editing (name, email, password), FAQ web view.
+- `ESGConnect/Subscription/`: Stripe pre-payment page in a `WKWebView`.
+- `ESGConnect/Helper/AppCheck.swift`: App Attest provider factory.
+- `ESG Connect.entitlements`: push notifications (`aps-environment` = development).
 - `README.md`: features, setup, Configuration table. `CHANGELOG.md`: 0.0.0 and 1.0.0 notes (2023). `design-assets/`: logo, banner and README screenshots only.
 
 ## Commands
@@ -34,7 +34,7 @@ No CI, no Makefile, no scripts. Everything goes through Xcode (Xcode 27 per READ
 
 ## Firebase and configuration
 
-- `ESGConnect/GoogleService-Info.plist` is git-ignored and must never be committed (it is not in git history). A local copy may exist; never print or copy its contents.
+- `ESGConnect/GoogleService-Info.plist` is git-ignored and must never be committed (it is not in git history). A local copy may exist; never print or copy its contents, never open, cat or grep it, and exclude it from searches over `ESGConnect/`.
 - Without the plist, or with launch argument `-FirebaseSetupPreview`, the app skips Firebase and shows the setup screen. Keep that guard working.
 - Firestore: `users/{uid}` with `userprofile` = `"employee"` or `"company"`. Field names differ by profile: employees use `educationstatus` / `social`, companies use `employeenumber` / `website`; both have `name`, `uid`, `location`. Sign-up and personal-info editing write the matching set, and Home filters on `userprofile`.
 - Realtime Database holds the web links read at runtime: `faq`, `privacy_policy`, `payment`. The database URL is hard-coded in `SignUpViewController`, `FAQViewController` and `SubscriptionViewController`.
@@ -49,11 +49,6 @@ No CI, no Makefile, no scripts. Everything goes through Xcode (Xcode 27 per READ
 - Colors and logos come from `Assets.xcassets` (`AppBlue`, `AppBlueDarker`, `AppYellow`, `Logo`, `Logo2`).
 - Deployment targets: app 15.0, test targets 17.0. The project-level setting is still 14.0; the target setting wins.
 
-## Validation placement and reuse (owner update 2026-10-26)
+## Validation
 
-- Follow the global Claude/Codex test policy and `~/Developer/personal/mac-mini/validation-economy/README.md` and `COVERAGE.md`. Focus first; full coverage only when the changed inputs require it. Docs-only policy edits need no application suite or deploy.
-- Use `~/Developer/personal/mac-mini/validation-economy/remote-run.py` for every check that can run on Linux (owner rule 2026-10-27: "all the things that we can run on pc must be on pc"): tests, lint, typecheck, Node and web checks. The Mini keeps only what needs macOS or a device, each such chunk with its reason written in the gate map; this repo wires the route in its own gate, and Linux-capable work left on the Mini is a bug to fix here. It defaults to `gaming-pc` and handles connection and bounded Wake-on-LAN automatically; call it directly without a separate online check or asking the owner each time. Match the pinned runtime and locked dependencies, bound actual workers, and preserve repo data-export restrictions. Never export credentials, production data, signing keys or uncommitted work.
-- The PC pool shares eight CPU slots and 24 GiB across isolated jobs with zero test swap; retain automatic job cleanup, the 8 GiB package-cache budget and 128 GiB virtual-disk cap. Brain is an explicit secondary route (`--runner brain`) when compatible, capped at two CPUs and 4 GiB together. If the PC remains unavailable after bounded wake/connect, report the blocker; never silently start the same work on the Mini or replay an uncertain submitted job.
-- Xcode, Swift, simulator, signing and device checks stay on the Mini. The PC Linux runner has no Apple toolchain; only compatible ancillary Python/Node checks are eligible.
-- For work that must run on the Mini: manual heavy commands use `repo-run.py --repo <absolute checkout> --profile <profile> -- <command>` from the shared helper; choose from native for the actual tool. Tiny syntax checks need no reservation. Bound tool workers and reserve separate heavy phases.
-- Reuse only supported receipts with matching source, coverage, dependencies, runtime/platform and relevant environment. Preserve passed unaffected batches; count remote results only when the owning gate aggregates them. Receipts do not replace required build artifacts or OS/device/browser proof. Split or offload an impossible reservation instead of waiting indefinitely; only stop your own obsolete jobs. Existing gates need explicit remote routing and matching-result aggregation; this instruction does not automatically move unintegrated commands.
+Mac-only: builds need Xcode, so they run on the Mini (global "Tests, CI and deploy"). No tests: the test targets have no source files. No simulator is needed.
