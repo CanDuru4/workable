@@ -1,6 +1,6 @@
 # Workable (ESG Connect)
 
-UIKit iOS app: a two-sided ESG hiring directory (companies and employees browse each other) backed by Firebase. LaunchX summer program project from 2023, built for the FutureGorge venture. Dormant portfolio repo: last feature work was 2023, with a 2026 modernization pass (SPM, current Xcode). Not on the App Store. Public repo, MIT.
+UIKit iOS app: a two-sided ESG hiring directory (companies and employees browse each other) backed by Firebase. LaunchX summer program project from 2023, built for the FutureGorge venture. Dormant portfolio repo: last feature work was 2023. Not on the App Store. Public repo, MIT.
 
 Stack: Swift 5.0, UIKit with programmatic Auto Layout, Firebase 12.19.1 via Swift Package Manager.
 
